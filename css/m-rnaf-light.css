@@ -36,11 +36,11 @@
   --link-decoration: underline;
   --link-decoration-nav: none;
   --link-decoration-heading: none;
-  --nav-brand-case: lowercase;
-  --nav-menu-case: lowercase;
+  --nav-brand-case: none;
+  --nav-menu-case: none;
   --nav-heading-case: uppercase;
-  --nav-categories-case: lowercase;
-  --landing-header-case: lowercase;
+  --nav-categories-case: none;
+  --landing-header-case: none;
   --heading-font-weight: normal;
 
   /* Shapes */
