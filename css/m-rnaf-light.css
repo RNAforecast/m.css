@@ -28,7 +28,7 @@
   /* Text properties */
   --font: 'Roboto Flex', sans-serif;
   --code-font: 'Source Code Pro', monospace;
-  --font-size: 14px;
+  --font-size: 16px;
   --code-font-size: 1em; /* *not* rem, so it follows surrounding font size */
   --line-height: normal;
   --paragraph-indent: 1.5rem;
@@ -67,12 +67,12 @@
 
   /* Header */
   --header-border-width: 0.25rem 0 0 0;
-  --header-color: #000000;
+  --header-color: #FFFFFF2;
   --header-breadcrumb-color: #bdbdbd; /* same as --dim-color */
   --header-background-color: #ffffff;
   --header-background-color-landing: rgba(255, 255, 255, 0.75);
   --header-background-color-jumbo: rgba(255, 255, 255, 0.25);
-  --header-link-color: #000000;
+  --header-link-color: #495057;
   --header-link-active-color: #cb4b16;
   --header-link-current-color: #ea7944;
   --header-link-active-background-color: #ffffff;
