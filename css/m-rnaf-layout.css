@@ -182,8 +182,8 @@ body > header > nav:target #m-navbar-hide {
   }
   body > header > nav a, body > header > nav #m-navbar-collapse li a {
     margin-left: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     white-space: nowrap;
   }
   body > header > nav #m-navbar-collapse {
@@ -239,11 +239,15 @@ body > footer > nav {
 body > footer > nav h3, body > footer > nav h3 a {
   text-transform: var(--nav-heading-case);
   font-weight: normal;
+  margin-bottom: 1.5rem;
 }
 body > footer > nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+body > footer > nav ul li{
+  margin-bottom: 1rem;
 }
 body > footer > nav a {
   text-decoration: var(--link-decoration-nav);
@@ -792,4 +796,21 @@ article:last-child, article section:last-child { margin-bottom: 0; }
 }
 .m-container-inflatable section:target .m-note.m-dim {
   border-color: var(--dim-color);
+}
+
+section.banner-lead {
+  background: var(--rnaf-gradient);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+section.banner-lead h1{
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+section.banner-lead div.muted{
+  color: var(--text-muted-color);
+  font-size: 1.1rem;
 }

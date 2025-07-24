@@ -1,6 +1,15 @@
 {% set page_slug = page.slug %}
 {% extends "base.html" %}
 
+{% block banner %}
+{% if page.banner %}
+<section class="banner-lead">
+  <h1>{{ page.banner }}</h1>
+  <div class ="muted">{{ page.banner_lead }}</div>
+</section>
+{% endif %}
+{% endblock %}
+
 {% block title %}
 {% if page.breadcrumb %}
 {% set breadcrumbs = page.breadcrumb.strip().split('\n') %}
