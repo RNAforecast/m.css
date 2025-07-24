@@ -110,18 +110,16 @@
       <div class="m-col-l-10 m-push-l-1">
         {% if not page.landing %}
         {% if page.breadcrumb %}
-        <h1>
           <span class="m-breadcrumb">
             {% set breadcrumbs = page.breadcrumb.strip().split('\n') %}
             {% for i in breadcrumbs %}
             {% set url, _, title = i.strip().partition(' ') %}
             <a href="{{ url|expand_link(page)|e }}">{{ title|e }}</a> &raquo;
             {% endfor %}
+            {{ page.title }}
           </span>
-          {{ page.title }}
-        </h1>
-        {% else %}
-        <h1>{{ page.title }}</h1>
+
+      
         {% endif %}
         {% endif %}
         {% if page.content %}

@@ -260,7 +260,6 @@ body > footer > nav a:hover, body > footer > nav a:focus, body > footer > nav a:
 
 /* Main content */
 body > main {
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -268,14 +267,16 @@ body > main {
 article h1 {
   font-size: 1.75rem;
 }
-article h1 .m-breadcrumb {
+article .m-breadcrumb {
   color: var(--dim-color);
   font-weight: normal;
+  font-size: 0.8rem;
+  padding-bottom: 2.5rem;
 }
-article h1 .m-breadcrumb a {
+article .m-breadcrumb a {
   color: var(--article-heading-color);
 }
-article h1 .m-breadcrumb a:hover, article h1 a:focus, article h1 a:active {
+article .m-breadcrumb a:hover, article h1 a:focus, article h1 a:active {
   color: var(--article-heading-active-color);
 }
 
