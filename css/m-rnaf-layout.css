@@ -31,6 +31,7 @@ body > header > nav {
   min-height: 3rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3)
 }
 body > header > nav.m-navbar-landing,
 body > header > nav.m-navbar-cover {
@@ -85,10 +86,10 @@ body > header > nav a#m-navbar-brand, body > header > nav #m-navbar-brand a {
 body > header > nav a#m-navbar-brand img, body > header > nav #m-navbar-brand a img {
   /* unfortuately, with SVGs, unless the size is hardcoded like this, it will
      cause ugly jumps during loading :( */
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 7rem;
   vertical-align: -22.5%;
   margin-right: 0.5rem;
+  padding-top: 0.5rem;
 }
 body > header > nav #m-navbar-brand a {
   padding-left: 0;
@@ -366,12 +367,17 @@ article section > h4 a, article section > h5 a, article section > h6 a {
   padding-top: 5rem;
 }
 #m-landing-image {
-  color: #ffffff;
+  color: var(--white);
 }
 #m-cover-image {
   height: 30rem;
   margin-bottom: -26rem;
 }
+
+#m-landing-cover {
+  color: var(--gray-900);
+}
+
 #m-landing-cover h1 {
   font-size: 2.8rem;
   margin-top: -0.5rem;
@@ -387,7 +393,7 @@ article#m-jumbo {
   margin-top: -1rem;
 }
 #m-landing-cover, #m-cover-image > div, article#m-jumbo > header #m-jumbo-cover {
-  background: linear-gradient(transparent 0%, transparent 50%, var(--background-color) 100%);
+  background: var(--rnaf-gradient-bg);
   width: 100%;
   height: 100%;
 }
@@ -800,10 +806,10 @@ article:last-child, article section:last-child { margin-bottom: 0; }
 }
 
 section.banner-lead {
-  background: var(--rnaf-gradient);
+  background: var(--rnaf-gradient-hero);
   color: var(--white);
   text-align: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 section.banner-lead h1{
@@ -814,4 +820,116 @@ section.banner-lead h1{
 section.banner-lead div.muted{
   color: var(--text-muted-color);
   font-size: 1.1rem;
+}
+
+#m-navbar-collapse li{
+    font-size: 0.95rem;
+}
+
+.r-landing-hero h1 {
+  padding-top: 0.5em;
+  font-size: 3em;
+  font-weight: 500 !important;
+  line-height: 1.2em;
+  padding-top: 3rem;
+}
+
+.r-landing-hero h2 {
+  padding-top: 0.5em;
+  font-size: 2.7em;
+  font-weight: 400 !important;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.r-landing-hero h3 {
+  padding-top: 1.5em;
+  font-size: 1.3em;
+
+  line-height: 1.2em;
+  height: 4.5rem;
+}
+
+.r-box-white {
+  background: var(--white);
+  box-shadow: 0.125rem 0.125rem 5px rgba(0, 0, 0, 0.3);
+  padding-right: 1rem;
+  paddding-left: 1rem;
+}
+
+.r-box-white h2 {
+  padding-top: 0.5em;
+  padding-left: 1.3rem;
+  font-size: 2em;
+  font-weight: 500 !important;
+  line-height: 1.2em;
+  color: var(--gray-900);
+}
+
+
+.r-banner-fullwidth h2 {
+  padding-top: 0.5em;
+  font-size: 2em;
+  font-weight: 400 !important;
+  line-height: 1.2em;
+}
+
+
+.r-landing-hero em{
+  font-style: normal;
+  color: var(--rnaf-secondary);
+}
+
+.r-highlight {
+  color: var(--rnaf-secondary);
+}
+
+.r-pad-lr-3 {
+  padding-right: 0.3rem !important;
+  padding-left: 0.3rem !important;
+}
+
+.r-block-landing {
+  min-height: 20vh;
+}
+
+.r-block-landing h3 {
+  color: var(--gray-900) !important;
+  font-weight: 500;
+  padding-top: 0.2rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+
+.r-block-landing img {
+  display: block;
+  margin: 0 auto;
+  width: 20%; /* or any width less than 100% */
+}
+
+.r-block-landing .m-button.m-primary a{
+  color: var(--rnaf-primary);
+  text-color: var(--rnaf-secondary);
+  background-color:  var(--white);
+  border-color: var(--rnaf-primary);
+  border: 2px solid;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.r-contact h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+
+.r-block-landing .m-button.m-primary a:hover {
+  background-color: var(--rnaf-secondary);
+  color: var(--white);
+}
+
+.r-block-landing img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }

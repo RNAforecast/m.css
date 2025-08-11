@@ -29,7 +29,7 @@
 /* Globals */
 html {
   font-size: var(--font-size);
-  background-color: var(--background-color);
+  background-color: var(--gray-100);
 }
 body {
   font-family: var(--font);
@@ -1061,13 +1061,25 @@ pre.m-math.m-warning, code.m-math.m-warning {
 pre.m-math.m-danger, code.m-math.m-danger {
   color: var(--danger-color);
 }
-.m-block.m-info { border-left-color: var(--info-color); }
+
+.m-block.m-info {
+  border-left-color: var(--white);
+  background-color: var(--white);
+}
+
+.m-block.m-info p {
+  line-height: 1.2rem;
+  font-size: 0.85rem;
+  text-align: center !important;
+}
+
 .m-block.m-info h3, .m-block.m-info h4, .m-block.m-info h5, .m-block.m-info h6,
 .m-block.m-info h3 a, .m-block.m-info h4 a, .m-block.m-info h5 a, .m-block.m-info h6 a,
 .m-text.m-info, .m-label.m-flat.m-info,
 pre.m-math.m-info, code.m-math.m-info {
-  color: var(--info-color);
+  color: var(--gray-900);
 }
+
 .m-block.m-dim { border-left-color: var(--dim-color); }
 .m-block.m-dim, .m-text.m-dim, .m-label.m-flat.m-dim,
 pre.m-math.m-dim, code.m-math.m-dim {
@@ -1123,13 +1135,15 @@ pre.m-math.m-dim, code.m-math.m-dim {
 }
 
 /* Colored button, non-flat label */
-div.m-button a, .m-label { color: var(--button-background-color); }
-div.m-button.m-flat a { color: var(--color); }
+div.m-button a, .m-label {
+  color: var(--white);
+}
+div.m-button.m-flat a { color: var(--rna-primary); }
 div.m-button.m-flat a:hover, div.m-button.m-default a:focus, div.m-button.m-default a:active {
   color: var(--link-active-color);
 }
 div.m-button.m-default a, .m-label:not(.m-flat).m-default { background-color: var(--default-color); }
-div.m-button.m-primary a, .m-label:not(.m-flat).m-primary { background-color: var(--primary-color); }
+div.m-button.m-primary a, .m-label:not(.m-flat).m-primary { background-color: var(--rnaf-primary); }
 div.m-button.m-success a, .m-label:not(.m-flat).m-success { background-color: var(--success-color); }
 div.m-button.m-warning a, .m-label:not(.m-flat).m-warning { background-color: var(--warning-color); }
 div.m-button.m-danger a, .m-label:not(.m-flat).m-danger { background-color: var(--danger-color); }
@@ -1679,4 +1693,87 @@ li:last-child > div.m-math:last-child, li:last-child > div.m-math.m-nopadb,
 li:last-child > div.m-graph:last-child, li:last-child > div.m-graph.m-nopadb,
 li:last-child > div.m-plot:last-child, li:last-child > div.m-plot.m-nopadb {
   margin-bottom: 0;
+}
+
+.r-basetext {
+  line-height: 1.5em;
+  font-size: 0.9rem;
+  padding-left: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.r-basetext p {
+  display: flex;
+  text-align: left;
+
+}
+
+.r-workshop-item  h6 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.r-workshop-item .fas {
+  color: var(--rnaf-secondary);
+}
+
+/* .r-form-control {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--gray-300);
+  padding: 0.75rem;
+  transition: var(--transition);
+}
+
+.r-form .r-form-row {
+  display: flex;
+}
+
+.r-form .mb-1 {
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+.r-form .r-form-label {
+  margin-bottom: 0.5rem;
+}
+
+.r-block {
+  display: block
+} */
+
+/* Ensure labels are above inputs */
+.r-form-label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* Make input and textarea full width and consistent */
+.r-form-control {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;  /* include padding in width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Row container for side-by-side fields */
+.r-form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Make each column take equal space */
+.r-form-row .mb-1 {
+  flex: 1; /* equal width columns */
+}
+
+/* Space between form groups */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Optional: Style textarea to match input appearance */
+textarea.r-form-control {
+  resize: vertical;
 }
