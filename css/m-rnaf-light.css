@@ -109,7 +109,7 @@
   --footer-link-active-color: var(--gray-600);
 
   /* Cover image */
-  --cover-image-background-color: #666666;
+  --cover-image-background-color: linear-gradient(135deg, rgba(30, 58, 138, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
 
   /* Search (used only by m-documentation.css) */
   --search-overlay-color: var(--header-background-color-landing);
