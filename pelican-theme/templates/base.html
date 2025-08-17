@@ -173,9 +173,16 @@
     </div>
     {% endif %}
     {% if not M_FINE_PRINT is defined or M_FINE_PRINT %}
+    <hr/>
     <div class="m-row">
-      <div class="m-col-l-10 m-push-l-1">
-        {{ (M_FINE_PRINT or SITENAME + ". Powered by `Pelican <https://getpelican.com>`_ and `m.css <https://mcss.mosra.cz>`_.")|render_rst|rtrim|indent(8) }}
+      <div class="m-col-t-2">
+        <div class="r-socialmedia">
+          <a href="{{ R_LINKEDIN_URL }}">LinkedIn</a>
+        </div>
+      </div>
+      <div class="m-col-t-8 m-push-l-2 m-push-m-2 m-push-s-2 m-push-t-2">
+        <div class="r-fineprint">
+        {{ (M_FINE_PRINT)|render_rst|rtrim|indent(8) }}
       </div>
     </div>
     {% endif %}

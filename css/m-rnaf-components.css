@@ -78,7 +78,7 @@ blockquote {
   border-left-width: 0.25rem;
 }
 hr {
-  width: 75%;
+  width: 90%;
   border-width: 0.0625rem;
   border-style: solid;
 }
@@ -1776,4 +1776,10 @@ li:last-child > div.m-plot:last-child, li:last-child > div.m-plot.m-nopadb {
 /* Optional: Style textarea to match input appearance */
 textarea.r-form-control {
   resize: vertical;
+}
+
+footer hr {
+  border: 0.5px solid;
+  width: 100%;
+  border-color: var(--gray-600) !important;
 }

@@ -238,7 +238,7 @@ body > footer > nav {
   background-color: var(--footer-background-color);
 }
 body > footer > nav h3, body > footer > nav h3 a {
-  text-transform: var(--nav-heading-case);
+  text-transform: none;
   font-weight: normal;
   margin-bottom: 1.5rem;
 }
@@ -890,6 +890,11 @@ section.banner-lead div.muted{
   padding-left: 0.3rem !important;
 }
 
+.r-pad-lr-none {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 .r-block-landing {
   min-height: 20vh;
 }
@@ -933,4 +938,64 @@ section.banner-lead div.muted{
   display: block;
   margin: 0 auto;
   width: 50%;
+}
+
+.r-box-info {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.r-box-info h5 {
+  font-size: 1.2rem;
+  color: var(--gray-900);
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+
+.r-box-info p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  text-align: center !important;
+}
+
+.r-subhead {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.r-subhead h2 {
+  color: var(--gray-900);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.r-subhead p {
+  text-align: center;
+}
+
+.fas-25 {
+  font-size: 2.5rem;
+}
+
+.r-method-icon {
+  margin-bottom: 0.8rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.r-secondary {
+  color: var(--rnaf-secondary);
+}
+
+.r-fineprint {
+  text-align: right;
+  margin-right: 2rem;
+  font-size: 0.7rem;
+}
+
+.r-socialmedia {
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 0.7rem;
 }
