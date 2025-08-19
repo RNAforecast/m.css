@@ -29,7 +29,7 @@
 /* Globals */
 html {
   font-size: var(--font-size);
-  background-color: var(--gray-100);
+  background-color: var(--gray-200);
 }
 body {
   font-family: var(--font);
