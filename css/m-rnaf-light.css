@@ -38,11 +38,13 @@
   --gray-900: #212529;
 
 /* Custom RNA Forecast colors */
-  --rnaf-primary: #1e3a8a;
+/*  --rnaf-primary: #1e3a8a;*/
+  --rnaf-primary: #003049;
   --rnaf-secondary: #3b82f6;
   --rnaf-accent: #10b981;
   --rnaf-warning: #f59e0b;
   --rnaf-gradient-hero: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  --rnaf-background: #EEF0F2;
 
   /* Text properties */
   /*--font: 'Roboto Flex', sans-serif;*/
@@ -66,13 +68,13 @@
   --heading-font-weight-bold: 700 !important;
 
   /* Shapes */
-  --border-radius: 0.25rem;
+  --border-radius: 0.5rem;
 
   /* Basics */
   --background-color: var(--rnaf-gradient-bg);
   --color: rgba(33, 37, 41, 0.75);
   --line-color: var(--gray-200);
-  --link-color: #ea7944;
+  --link-color: var(--rnaf-primary);
   --link-active-color: #cb4b16;
   --mark-color: #4c93d3;
   --mark-background-color: #e6e69c;
@@ -97,7 +99,7 @@
   --header-background-color-jumbo: rgba(255, 255, 255, 0.25);
   --header-link-color: #495057;
   --header-link-active-color: var(--rnaf-primary);
-  --header-link-current-color: #ea7944;
+  --header-link-current-color: var(--rnaf-primary);
   --header-link-active-background-color: #ffffff;
   --header-link-active-background-color: rgba(255, 255, 255, 0.5);
 

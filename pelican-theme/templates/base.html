@@ -41,6 +41,15 @@
   {% if M_HTML_HEADER %}
   {{ M_HTML_HEADER|rtrim|indent(2) }}
   {% endif %}
+  {% if GOOGLE_ANALYTICS %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{GOOGLE_ANALYTICS}}"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{GOOGLE_ANALYTICS}}');
+  </script>
+  {% endif %}
 </head>
 <body>
 <header><nav id="navigation"{% if page and page.landing %} class="m-navbar-landing"{% elif (page and page.cover) or (article and article.cover) %} class="m-navbar-cover"{% endif %}>

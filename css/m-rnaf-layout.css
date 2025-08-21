@@ -86,7 +86,7 @@ body > header > nav a#m-navbar-brand, body > header > nav #m-navbar-brand a {
 body > header > nav a#m-navbar-brand img, body > header > nav #m-navbar-brand a img {
   /* unfortuately, with SVGs, unless the size is hardcoded like this, it will
      cause ugly jumps during loading :( */
-  width: 7rem;
+  width: 12rem;
   vertical-align: -22.5%;
   margin-right: 0.5rem;
   padding-top: 0.5rem;
@@ -832,7 +832,7 @@ section.banner-lead div.muted{
   font-size: 3em;
   font-weight: 500 !important;
   line-height: 1.2em;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .r-landing-hero h2 {
@@ -853,9 +853,12 @@ section.banner-lead div.muted{
 
 .r-box-white {
   background: var(--white);
-  box-shadow: 0.125rem 0.125rem 5px rgba(0, 0, 0, 0.3);
   padding-right: 1rem;
   paddding-left: 1rem;
+}
+
+.r-box-shadow {
+  box-shadow: 0.125rem 0.125rem 5px rgba(0, 0, 0, 0.3);
 }
 
 .r-box-white h2 {
@@ -940,24 +943,6 @@ section.banner-lead div.muted{
   width: 50%;
 }
 
-.r-box-info {
-  background-color: var(--white);
-  text-align: center;
-}
-
-.r-box-info h5 {
-  font-size: 1.2rem;
-  color: var(--gray-900);
-  font-weight: 500;
-  margin-bottom: 0.9rem;
-}
-
-.r-box-info p {
-  font-size: 0.9rem;
-  line-height: 1.3rem;
-  text-align: center !important;
-}
-
 .r-subhead {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
@@ -984,6 +969,10 @@ section.banner-lead div.muted{
   text-align: center;
 }
 
+.r-primary {
+  color: var(--rnaf-primary);
+}
+
 .r-secondary {
   color: var(--rnaf-secondary);
 }
@@ -998,4 +987,13 @@ section.banner-lead div.muted{
   text-align: left;
   margin-left: 2rem;
   font-size: 0.7rem;
+}
+
+.r-welcome  {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.r-welcome p {
+  padding-bottom: 1.3rem;
 }
